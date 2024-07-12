@@ -1,0 +1,23 @@
+.amplify-button--primary {
+    background-image: linear-gradient(
+      to right, 
+      var(--amplify-colors-blue-80), 
+      var(--amplify-colors-teal-60),
+      var(--amplify-colors-green-40)
+    );
+    border: none;
+    color: white; /* Ensures text is readable on the vibrant background */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25); /* Adds a slight shadow to the text for better readability */
+    padding: 0.8rem 1.2rem; /* Adjust padding as needed */
+    font-weight: bold; /* Makes the button text bolder */
+    transition: transform 0.3s ease-in-out; /* Smooth transform on click */
+}
+
+.amplify-button--primary:hover {
+    transform: scale(1.05); /* Slightly enlarges the button on hover for a dynamic effect */
+    cursor: pointer;
+}
+
+.amplify-button--primary:active {
+    transform: scale(0.95); /* Slightly shrinks the button on click */
+}
